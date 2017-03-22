@@ -1,0 +1,36 @@
+extends ./../layout
+block styles
+    link(rel='stylesheet', href='./../stylesheets/index.css')
+block content
+    nav.navbar.navbar-default
+        .container-fluid
+            .navbar-header
+                button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(href='/users') 饱了么订餐平台
+     .container
+         h2 注册
+         form.form-horizontal
+             .form-group
+                 label.col-sm-5.control-label(for='username') 用户名
+                 .col-sm-2#usernameWarn
+                     input#username.form-control.col-lg-sm(type='text', placeholder='用户名', name='username')
+                     span.help-block#usernameWarnText 用户名不能为空！
+             .form-group
+                 label.col-sm-5.control-label(for='password') 密码
+                 .col-sm-2#passwordWarn
+                     input#password.form-control(type='password', placeholder='密码', name='password')
+                     span.help-block#passwordWarnText 密码不能为空!
+             .form-group
+                 label.col-sm-5.control-label(for='rpassword') 确认密码
+                 .col-sm-2#passwordWarn
+                     input#rpassword.form-control(type='password', placeholder='密码', name='rpassword')
+                     span.help-block#rpasswordWarnText 密码不能为空!
+             .form-group
+                 .col-sm-offset-5.col-sm-5
+                     button.btn.btn-success#login(type='button') 注册
+block javascripts
+    script(src='./../javascripts/userRegister.js')

@@ -1,0 +1,32 @@
+extends ./layout
+block styles
+	link(rel='stylesheet', href='./../../stylesheets/manage.css')
+block content
+	div.sysnamecontent
+		span.sysname 饱了么订餐管理系统
+	div.welcome
+		div.welcomeContainer.container
+			span.welcomeText 欢迎管理员
+			a(href='javascript:0')=admin
+	.container
+		div.content
+			div.menu
+				ul
+					li
+						a(href='./?type=newOrders') 未处理订单
+					li
+						a(href='./?type=oldOrders') 已处理订单
+					li
+						a(href='./?type=allGoods') 商品列表
+					li
+						a(href='./?type=addGoods') 添加商品
+			-if(type=="newOrders")
+				include ./goods/newOrders
+			-if(type=="oldOrders")
+				include ./goods/oldOrders
+			-if(type=="allGoods")
+				include ./goods/allGoods
+			-if(type=="addGoods")
+				include ./goods/addGoods
+block javascripts
+	script(src='/javascripts/adminlogin.js')

@@ -1,0 +1,54 @@
+a,a:hover,a:link{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+ul{
+    padding:0;
+}
+.sysnamecontent{
+    margin-top: 0;
+    height: 100px;
+    background-color: #5bc0de;
+    text-align: center;
+}
+.sysname{
+    font-size: 4em;
+    color: white;
+}
+.welcome{
+    height: 30px;
+    background-color:#cccccc;
+    line-height: 30px;
+}
+.welcomeText{
+    padding: 0 10px;
+}
+.content{
+    height: 700px;
+    background-color: #f7f7f7;
+}
+.menu ul{
+    width: 100%;
+    padding:0 30px;
+    border-bottom: 1px solid #cccccc;
+}
+.menu li{
+    display:inline-block ;
+    padding: 10px 20px;
+    background-color:#ffffff;
+    border:1px solid #cccccc;
+}
+.navbar{
+    margin-bottom: 0 !important;
+}
+.editname{
+    margin: 10px 10px;
+}
+.showpd{
+    display: block;
+}
+.updatepd{
+    opacity: 0;
+}

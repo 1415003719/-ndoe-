@@ -1,0 +1,14 @@
+.sysnamecontent{
+    margin-top: 0;
+    height: 100px;
+    background-color: #5bc0de;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.sysname{
+    font-size: 4em;
+    color: white;
+}
+#usernameWarnText,#passwordWarnText{
+		color: red;
+}

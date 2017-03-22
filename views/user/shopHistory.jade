@@ -1,0 +1,12 @@
+-var getInfo=(JSON.parse(info[1].payInfo))
+
+table.table.table-hover
+    tr
+        th 商品名
+        th 购买日期
+     for onetime in info
+         div
+            for o in JSON.parse(onetime.payInfo)
+                tr
+                    td=o.foodname
+                    td=onetime.payTime

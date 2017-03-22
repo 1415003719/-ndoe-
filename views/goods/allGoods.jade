@@ -1,0 +1,17 @@
+extends ./../layout
+block content
+    div.food
+        ul
+            .row
+                for food in foods
+                    .col-sm-5.col-md-3
+                        .thumbnail
+                            img(src='./../../images/#{food.foodimg}', alt='...')
+                            .caption
+                                h4=food.foodname
+                                p 销量
+                                    span.xiaoliang=food.xiaoliang
+                                p
+                                    a.btn.btn-primary.xiajia(href='#', role='button' data-food="#{food.foodname}") 下架
+block javascripts
+    script(src='./../../javascripts/good.js')

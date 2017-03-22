@@ -1,0 +1,13 @@
+body{
+    background-color: #f7f7f7;
+}
+.container-fluid{
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+}
+.thumbnail img{
+    height:160px !important;
+}
+.xiaoliang{
+    padding:5px 10px;
+}

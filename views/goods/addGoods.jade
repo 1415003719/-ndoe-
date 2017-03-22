@@ -1,0 +1,25 @@
+extends ./../layout
+block styles
+    link(rel='stylesheet', href='./../stylesheets/goods.css')
+block content
+    form.form-horizontal
+        .form-group
+            label.col-sm-2.control-label(for='foodname') 食品名
+            .col-sm-10
+                input#foodname.form-control(type='text', placeholder='食品名')
+        .form-group
+            label.col-sm-2.control-label(for='foodimg') 图片地址
+            .col-sm-10
+                input#foodimg.form-control(type='text', placeholder='图片地址')
+        .form-group
+            label.col-sm-2.control-label(for='type') 类型
+            .col-sm-10
+                select(name="type" id="type")
+                    option(value="主食") 主食
+                    option(value="饮品") 饮品
+        .form-group
+            .col-sm-offset-2.col-sm-10
+                a.btn.btn-default(href="javascript:0" id="submit") 提交
+
+block javascripts
+    script(src='./../../javascripts/addGoods.js')

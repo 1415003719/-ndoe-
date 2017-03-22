@@ -1,0 +1,17 @@
+form.form-inline.col-sm-offset-3.col-sm-6
+    .form-group
+        .input-group
+            .input-group-addon 账户名
+            input#updatename.form-control(type="text", placeholder="#{info.username}" disabled)
+    button.btn.btn-primary.editname(type="button") 修改
+    button.btn.btn-primary.suerEditname(type="button") 确认修改
+    br
+    .form-group
+        a.showpd(href="javascript:void(0)" type="button") 修改密码
+            div.updatepd
+                .input-group
+                    .input-group-addon 原密码
+                    input#oldpd.form-control(type="password")
+                    .input-group-addon 新密码
+                    input#newpd.form-control(type="password")
+                button.btn.btn-primary.submitpd(type="button") 确认修改

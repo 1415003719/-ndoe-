@@ -1,0 +1,10 @@
+extends ./../layout
+block styles
+
+block content
+    h3 恭喜您注册成功！
+    p
+        span.clock(style="color:red;padding-left:20px") 3
+        |秒后自动跳到主页.....
+block javascripts
+    script(src='./../javascripts/registerOk.js')
